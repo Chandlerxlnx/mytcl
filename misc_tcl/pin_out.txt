@@ -1,0 +1,93 @@
+set_property PACKAGE_PIN P4 [get_ports RST_PLL ]
+
+
+
+set_property IOSTANDARD LVCMOS18 [get_ports SSTEP]
+
+set_property DIFF_TERM TRUE [get_ports c3_sys_clk_n]
+set_property IOSTANDARD LVDS_25 [get_ports c3_sys_clk_n]
+
+set_property DIFF_TERM TRUE [get_ports c3_sys_clk_p]
+set_property IOSTANDARD LVDS_25 [get_ports c3_sys_clk_p]
+
+set_property IOSTANDARD LVCMOS18 [get_ports c3_sys_rst_i]
+
+set_property IOSTANDARD LVCMOS25 [get_ports calib_done]
+
+set_property IOSTANDARD LVCMOS25 [get_ports dbg_mcb_drp_clk]
+
+set_property IOSTANDARD LVCMOS25 [get_ports error]
+
+set_property IOSTANDARD LVCMOS25 [get_ports heartbeat]
+
+set_property IOSTANDARD SSTL18_II [get_ports mcb3_dram_cas_n]
+
+set_property IOSTANDARD DIFF_SSTL18_II [get_ports mcb3_dram_ck]
+
+set_property IOSTANDARD DIFF_SSTL18_II [get_ports mcb3_dram_ck_n]
+
+set_property IOSTANDARD SSTL18_II [get_ports mcb3_dram_cke]
+
+set_property IOSTANDARD SSTL18_II [get_ports mcb3_dram_dm]
+
+set_property IN_TERM NONE [get_ports mcb3_dram_dqs]
+set_property IOSTANDARD DIFF_SSTL18_II [get_ports mcb3_dram_dqs]
+
+set_property IN_TERM NONE [get_ports mcb3_dram_dqs_n]
+set_property IOSTANDARD DIFF_SSTL18_II [get_ports mcb3_dram_dqs_n]
+
+set_property IOSTANDARD SSTL18_II [get_ports mcb3_dram_odt]
+
+set_property IOSTANDARD SSTL18_II [get_ports mcb3_dram_ras_n]
+
+set_property IOSTANDARD SSTL18_II [get_ports mcb3_dram_udm]
+
+set_property IN_TERM NONE [get_ports mcb3_dram_udqs]
+set_property IOSTANDARD DIFF_SSTL18_II [get_ports mcb3_dram_udqs]
+
+set_property IN_TERM NONE [get_ports mcb3_dram_udqs_n]
+set_property IOSTANDARD DIFF_SSTL18_II [get_ports mcb3_dram_udqs_n]
+
+set_property IOSTANDARD SSTL18_II [get_ports mcb3_dram_we_n]
+
+set_property IOSTANDARD SSTL18_II [get_ports mcb3_rzq]
+
+set_property IOSTANDARD SSTL18_II [get_ports mcb3_zio]
+
+set_property IOSTANDARD LVCMOS25 [get_ports pll_locked]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
