@@ -1,12 +1,12 @@
 #Read Me
-= Script to sweep the strategies.
+##Script to sweep the strategies.
 
 Usage:
     1) ln -s <your dcp file> top.dcp;
     2) run_seeds.sh;
     3) ./tns_grep.sh; to check the TNS/WNS
 
-=Note:
+##Note:
    this is a template script to sweep the strategies. the current version will just sweep the placement strategies. feel free to modify to sweep other strategies. and the scripts is for Linux.
    files:
     1) top.dcp : the design file, it is opt_design dcp in current version
@@ -20,3 +20,4 @@ Usage:
 
 ==Attention==
   This is verified on ultrascale devices and vivado 2016.3. please remove the strategies which is not supported by your device and vivado.
+
