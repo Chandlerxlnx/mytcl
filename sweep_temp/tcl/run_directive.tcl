@@ -36,14 +36,17 @@ puts "-route: $args(-route)";
 open_checkpoint ./top.dcp
 
 #opt_design ;
-#source ./tcl/pre_phys.tcl
+source ./tcl/pre_place.tcl
+
 place_design -directive $args(-place);
 report_timing_summary -max_paths 10 -report_unconstrained -check_timing_verbose -file top_tspl.rpt
+
+source ./tcl/pre_phys.tcl
 phys_opt_design -directive $args(-phys);
 report_timing_summary -max_paths 10 -report_unconstrained -check_timing_verbose -file top_tspph1.rpt
 write_checkpoint -force top_phys1.dcp
 
-#source ./tcl/pre_route.tcl
+source ./tcl/pre_route.tcl
 route_design -directive $args(-route);
 report_timing_summary -max_paths 10 -report_unconstrained -check_timing_verbose -file top_tsrt.rpt
 
